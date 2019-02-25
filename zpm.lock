@@ -1,0 +1,77 @@
+{
+  "definition": "./",
+  "optionals": [],
+  "private": {
+    "modules": [ {
+      "definition": "https://github.com/Zefiros-Software/ZefirosDefaults.git",
+      "hash": "51084b643604be592031efcf31127207f122525f",
+      "name": "Zefiros-Software/Defaults",
+      "public": {
+        "libraries": [ {
+          "definition": "https://github.com/Zefiros-Software/GoogleTest.git",
+          "hash": "b4d4438df9479675a632b2f11125e57133822ece",
+          "name": "Zefiros-Software/GoogleTest",
+          "repository": "https://github.com/google/googletest.git",
+          "tag": "HEAD",
+          "versionRequirement": "@head || ^1.0.0"
+        }, {
+          "definition": "https://github.com/Zefiros-Software/GoogleBenchmark.git",
+          "hash": "1f35fa4aa71bffb5e5672f7ca876561d6adef4fd",
+          "name": "Zefiros-Software/GoogleBenchmark",
+          "repository": "https://github.com/google/benchmark.git",
+          "tag": "HEAD",
+          "versionRequirement": "@head"
+        } ]
+      },
+      "repository": "https://github.com/Zefiros-Software/ZefirosDefaults.git",
+      "tag": "HEAD",
+      "versionRequirement": "@head"
+    } ]
+  },
+  "public": {
+    "libraries": [ {
+      "definition": "https://github.com/Zefiros-Software/MKL.git",
+      "hash": "1b0ad49685f371144ce754d859bbad07722d4915",
+      "name": "Zefiros-Software/MKL",
+      "repository": "https://github.com/Zefiros-Software/MKL.git",
+      "settings": {
+        "blas95": true,
+        "core": true,
+        "lapack95": true,
+        "sequential": true
+      },
+      "tag": "HEAD",
+      "versionRequirement": "@head"
+    }, {
+      "definition": "https://github.com/Zefiros-Software/simdpp.git",
+      "hash": "ecd9282cbddee35235b465acc7ba5d741bd13e68",
+      "name": "Zefiros-Software/simdpp",
+      "repository": "https://github.com/p12tic/libsimdpp.git",
+      "settings": {
+        "simd": "AVX2"
+      },
+      "tag": "libsimdpp-2.x",
+      "versionRequirement": "@libsimdpp-2.x"
+    }, {
+      "definition": "https://github.com/Zefiros-Software/ArmadilloBuild.git",
+      "hash": "35dcf5bdb0a1a621711e22cd646df841b62dac9b",
+      "name": "Zefiros-Software/Armadillo",
+      "optionals": {
+        "libraries": [ {
+          "name": "Zefiros-Software/MKL",
+          "settings": {
+            "blas95": true,
+            "core": true,
+            "lapack95": true,
+            "sequential": true
+          },
+          "versionRequirement": "@head"
+        } ]
+      },
+      "repository": "https://gitlab.com/conradsnicta/armadillo-code.git",
+      "tag": "HEAD",
+      "versionRequirement": "@head"
+    } ]
+  },
+  "repository": "./"
+}

@@ -1,0 +1,23 @@
+public:
+  libraries:
+    - name: Zefiros-Software/MKL
+      version: '@head'
+      settings:
+        blas95: true
+        core: true
+        lapack95: true
+        sequential: true
+    - name: Zefiros-Software/simdpp
+      version: '@libsimdpp-2.x'
+      settings:
+        simd: AVX2
+    - name: Zefiros-Software/Armadillo
+      version: '@head'
+development:
+  modules:
+    - name: Zefiros-Software/Defaults
+      version: '@head'
+settings:
+  scalar: 
+    default: double
+    reduce: first
